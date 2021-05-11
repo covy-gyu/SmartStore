@@ -54,15 +54,40 @@
                     </div>
                     <button class="accordion">주문 정보</button>
                     <div id = "orderInfo" class="acc_content">
-                        <select id="mySelect" onchange="myFunction()">
-                            <option value="" selected disabled>선택</option>
-                            <option value="A">A. 스피드 원터치 팝업텐트(3~4인용)</option>
-                            <option value="B">B. 5초 원터치 텐트(3인용) (+10,000원)</option>
-                            <option value="C">C. 5초 원터치 텐트(5인용) (+20,000원)</option>
+                        <select id="mySelect" onchange="mySelect()">
+                            <option value="default" selected disabled>선택</option>
+                            <option value="select_A">A. 스피드 원터치 팝업텐트(3~4인용)</option>
+                            <option value="select_B">B. 5초 원터치 텐트(3인용) (+10,000원)</option>
+                            <option value="select_C">C. 5초 원터치 텐트(5인용) (+20,000원)</option>
                         </select>
+                        <ul id="tentUL">
+                            <!-- <li class="tentLI" id="li_A">A. 스피드 원터치 팝업텐트(3~4인용)
+                                <input type="text" id="input_A" placeholder="1">
+                                <button class="add" id="add_A">+</button>
+                                <button class="subtract">-</button>
+                                <button class="remove">x</button>
+                                <span class="price" id="price_A"></span>
+                            </li>
+                            <li class="tentLI" id="li_B">B. 5초 원터치 텐트(3인용) (+10,000원)
+                                <input type="text" id="input_B" placeholder="1">
+                                <button class="add">+</button>
+                                <button class="subtract">-</button>
+                                <button class="remove">x</button>
+                                <span class="price" id="price_B"></span>
+                            </li>
+                            <li class="tentLI" id="li_C">C. 5초 원터치 텐트(5인용) (+20,000원)
+                                <input type="text" id="input_C" placeholder="1">
+                                <button class="add">+</button>
+                                <button class="subtract">-</button>
+                                <button class="remove">x</button>
+                                <span class="price" id="price_C"></span>
+                            </li> -->
+                            
+                        </ul>
+                          
                     </div>
-                    <div style="float : right">
-                        <strong id="totalPrice">총 상품금액 0원</strong>
+                    <div id="totalDiv" style="float : right">
+                        <strong>총 상품금액 <span id="finalPrice"></span>원</strong>
                     </div>
                     <br>
                     <button>구매하기</button>

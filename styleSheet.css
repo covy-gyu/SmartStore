@@ -117,10 +117,6 @@ fieldset button.active {
     background-color: #ccc;
   }
 
-#mySelect{
-    display: block;
-}
-
 p{
     margin: 0;
 }
@@ -128,3 +124,13 @@ p{
 fieldset{
     padding : 5px 0px;
 }
+
+.acc_content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+}
+
